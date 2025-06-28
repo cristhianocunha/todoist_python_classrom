@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Lista de Tarefas</h1>
+    <a href="{% url 'task_create' %}" role="button">Nova Tarefa</a>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                {% if task.completed %}<s>{{ task.title }}</s>{% else %}{{ task.title }}{% endif %}
+                <a href="{% url 'task_update' task.id %}" role="button" class="secondary">Editar</a>
+                <a href="{% url 'task_delete' task.id %}" role="button" class="contrast">Excluir</a>
+            </li>
+        {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>
