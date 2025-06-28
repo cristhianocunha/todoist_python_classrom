@@ -2,24 +2,24 @@
 
 ## Esse repositorio tem arquivos base para aula.
 
-- todoist/
-  | manage.py
-  - todoist/
-    | __init__.py
-    | settings.py
-    | urls.py
-    | wsgi.py
-  - tasks/
-    | admin.py
-    | apps.py
-    | models.py
-    | views.py
-    | urls.py
-    - templates/
-      - tasks/
-        | task_list.html
-        | task_form.html
-        | task_confirm_delete.html
-    - migrations/
+- todoist/<br>
+  | manage.py<br>
+  - todoist/<br>
+    | __init__.py<br>
+    | settings.py<br>
+    | urls.py<br>
+    | wsgi.py<br>
+  - tasks/<br>
+    | admin.py<br>
+    | apps.py<br>
+    | models.py<br>
+    | views.py<br>
+    | urls.py<br>
+    - templates/<br>
+      - tasks/<br>
+        | task_list.html<br>
+        | task_form.html<br>
+        | task_confirm_delete.html<br>
+    - migrations/<br>
 
 
